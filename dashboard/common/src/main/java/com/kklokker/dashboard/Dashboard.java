@@ -40,6 +40,10 @@ public class Dashboard extends Lifecycle {
     }
 
     //Timetable
+
+    /*
+    * Constructs the timeDash container
+     */
     private Container timeDash() {
         Container timeDash = new Container(BoxLayout.y());
         Container timeTitle = new Container(new BorderLayout());
@@ -51,8 +55,11 @@ public class Dashboard extends Lifecycle {
         titleAndLogo.add(makeIcon("\ue935", 10, "0x000000"));
         timeTitle.add(BorderLayout.WEST, titleAndLogo);
         timeTitle.add(BorderLayout.EAST, new Button("Open calendar"));
-        timeDash.add(new Label("Today"));
+        Label todayLabel = new Label("Today");
+        todayLabel.setUIID("todayLabel");
+        timeDash.add(todayLabel);
         timeTable = new Container(new BoxLayout(BoxLayout.X_AXIS));
+        timeTable.setScrollableX(true);
 
         addEvent(new String[]{"Learn HTML", "12 stream. Yellow shark", "12","30"});
         addEvent(new String[]{"Create a Back-End app", "7 Stream. Red peppers", "12","30"});
@@ -66,6 +73,9 @@ public class Dashboard extends Lifecycle {
         return timeDash;
     }
 
+    /*
+    * Adds am event to the timetable global variable is the input is valid and return true. This is due to not closing the pop-up  form
+     */
     private boolean addEvent(String[] input) {
         if(validInput(input)) {
             timeEvent event = new timeEvent(input[0],(input[2] + ":" + input[3]), input[1]);
@@ -74,6 +84,10 @@ public class Dashboard extends Lifecycle {
         return false;
     }
 
+    /*
+    * The pop-up  form creation.
+    * This creates the form with labels and input fields and button which gather inputs and tries to make event if successful closing the pop-up or showing and error message
+     */
     private void showEventForm() {
         Container eventForm = new Container(BoxLayout.y());
         eventForm.setUIID("popUpForm");
@@ -90,7 +104,7 @@ public class Dashboard extends Lifecycle {
         name.add(nameField);
         eventForm.add(name);
         Container address = new Container(BoxLayout.x());
-        address.add(new Label("Adress:"));
+        address.add(new Label("Address:"));
         TextField addressField = new TextField();
         addressField.setUIID("eventField");
         address.add(addressField);
@@ -131,6 +145,11 @@ public class Dashboard extends Lifecycle {
         dashboard.revalidateWithAnimationSafety();
     }
 
+    /*
+    * Class for the time events.
+    * Includes constructor, a method for creating object, getter for time in string format and compareTo method
+    * The comparable is implemented to sort the events according to the time of the event
+     */
     private class timeEvent implements Comparable<timeEvent>{
         private String title;
         private int timeHour, timeMin;
@@ -179,6 +198,11 @@ public class Dashboard extends Lifecycle {
     }
 
     //Classes
+
+    /*
+    * Creates the class dashboard with filter menu.
+    * Also creates the classes from the design
+     */
     private Container classDash() {
         Container classDash = new Container(BoxLayout.y());
         Container title = new Container(new BorderLayout());
@@ -217,6 +241,11 @@ public class Dashboard extends Lifecycle {
         return classDash;
     }
 
+    /*
+    * This method is used for filtering the modules according to difficulty
+    * The method takes 3 arguments, the difficulty which should be shown, the button which is pressed and the parent of the buttons
+    * The two last arguments is used to style the not selected buttons and the selected button
+     */
     private void showModules(int level, Button elem, Container parent) {
         for(Component con: parent) {
             if(con.getUIID() == "buttonSelected")
@@ -230,6 +259,10 @@ public class Dashboard extends Lifecycle {
         dashboard.revalidateWithAnimationSafety();
     }
 
+    /*
+    * Class for creating class objects.
+    * The class include a obj function which returns the objects as a container
+     */
     private class classModule {
         private String title, icon;
         private int students, lessons, progress, level;
@@ -274,6 +307,36 @@ public class Dashboard extends Lifecycle {
 
     //Links
 
+    /*
+    * Creates the dash for the links and the links in the dash
+     */
+    private Container links() {
+        Container links = new Container(BoxLayout.y());
+        Container title = new Container(BoxLayout.x());
+        Label linkTitle = new Label("Links");
+        linkTitle.setUIID("linkTitle");
+        title.add(linkTitle);
+        title.add(makeIcon("\ue89e", 10,"0x000000"));
+        links.add(title);
+        Container mes = new link("Messager", "5 new messages", "\ue0cb").obj();
+        mes.setUIID("messages");
+        links.add(mes);
+        Container prog = new link("Progress", "See the progress in detail in the chart", "\uE6e1").obj();
+        prog.setUIID("prog");
+        links.add(prog);
+        Container cons = new link("Consultation", "3 students are waiting to see you", "\uE04e").obj();
+        cons.setUIID("cons");
+        links.add(cons);
+        Container prof = new link("Profile", "See the progress in detail in the chart", "\uE7ff").obj();
+        prof.setUIID("prof");
+        links.add(prof);
+        return links;
+    }
+
+    /*
+    * Class for the link objects.
+    * Includes an obj method used to return a container representing the object
+     */
     private class link {
         private String title, subtext, icon;
 
@@ -298,31 +361,11 @@ public class Dashboard extends Lifecycle {
         }
     }
 
-    private Container links() {
-        Container links = new Container(BoxLayout.y());
-        Container title = new Container(BoxLayout.x());
-        Label linkTitle = new Label("Links");
-        linkTitle.setUIID("linkTitle");
-        title.add(linkTitle);
-        title.add(makeIcon("\ue89e", 10,"0x000000"));
-        links.add(title);
-        Container mes = new link("Messager", "5 new messages", "\ue0cb").obj();
-        mes.setUIID("messages");
-        links.add(mes);
-        Container prog = new link("Progress", "See the progress in detail in the chart", "\uE6e1").obj();
-        prog.setUIID("prog");
-        links.add(prog);
-        Container cons = new link("Consultation", "3 students are waiting to see you", "\uE04e").obj();
-        cons.setUIID("cons");
-        links.add(cons);
-        Container prof = new link("Profile", "See the progress in detail in the chart", "\uE7ff").obj();
-        prof.setUIID("prof");
-        links.add(prof);
-        return links;
-    }
-
     //Help methods
 
+    /*
+    * Ensures no input is null and the time is in a valid range of a digital clock
+     */
     private static boolean validInput(String[] input) {
         if(input[0] == null || input[1] == null || input[2] == null || input[3] == null)
             return false;
@@ -335,6 +378,9 @@ public class Dashboard extends Lifecycle {
         return true;
     }
 
+    /*
+    * Returns is a given string a numeric, used for validating input
+     */
     private static boolean isNumeric(String strNum) {
         try {
             double d = Integer.parseInt(strNum);
@@ -344,6 +390,11 @@ public class Dashboard extends Lifecycle {
         return true;
     }
 
+    /*
+    * Makes an icon from the icon string found on https://fonts.google.com/icons?selected=Material+Icons where it has to start with "\u" + the icon code point
+    * The width is used to the icon sized which is the screen-width divided by the width argument
+    * The color argument is for the color of the icon given in hex
+     */
     private FontImage makeIcon(String icon, int width, String color) {
         Font materialFont = FontImage.getMaterialDesignFont();
         int w = Display.getInstance().getDisplayWidth()/width;

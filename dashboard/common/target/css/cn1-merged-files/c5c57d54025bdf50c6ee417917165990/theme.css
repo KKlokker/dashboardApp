@@ -18,6 +18,11 @@ timeTable {
     border-top: 2px solid black;
 }
 
+todayLabel {
+    color: grey;
+    font-size: 3mm;
+}
+
 timeTitle {
     font-size: 3mm;
     margin: 0;

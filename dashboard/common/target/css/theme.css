@@ -1,5 +1,5 @@
 
-/* /home/klokker/git/sync/dashboardApp/dashboard/common/src/main/css/theme.css */
+/* /home/klokker/git/sync/dashboardApp/dashboard/javase/../common/src/main/css/theme.css */
 /** Define Theme Constants here */
 #Constants {
     includeNativeBool: true;
@@ -18,6 +18,11 @@ dashboard {
 timeTable {
     border-bottom: 2px solid black;
     border-top: 2px solid black;
+}
+
+todayLabel {
+    color: grey;
+    font-size: 3mm;
 }
 
 timeTitle {
@@ -115,4 +120,4 @@ linkTitle {
     font-size: 4mm;
 }
 
-/* end /home/klokker/git/sync/dashboardApp/dashboard/common/src/main/css/theme.css*/
+/* end /home/klokker/git/sync/dashboardApp/dashboard/javase/../common/src/main/css/theme.css*/
