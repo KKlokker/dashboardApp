@@ -6,20 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="336d32c5-6f4b-4a8f-b637-9fea310958e7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/css/theme.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/com/kklokker/dashboard/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/kklokker/dashboard/Dashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/.cn1_css_checksums" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/.cn1_css_checksums" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kklokker/dashboard/Dashboard$classModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/kklokker/dashboard/Dashboard$classModule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kklokker/dashboard/Dashboard$link.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/kklokker/dashboard/Dashboard$link.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kklokker/dashboard/Dashboard$timeEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/kklokker/dashboard/Dashboard$timeEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/kklokker/dashboard/Dashboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/kklokker/dashboard/Dashboard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/theme.res" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/theme.res" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/codenameone/simulator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/codenameone/simulator.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/compliance-check.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/compliance-check.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/css/cn1-merged-files/c5c57d54025bdf50c6ee417917165990/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/css/cn1-merged-files/c5c57d54025bdf50c6ee417917165990/theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/css/theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/css/theme.css.checksums" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/css/theme.css.checksums" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/dashboard-common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/dashboard-common-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -816,7 +803,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/common/src/main/java/com/kklokker/dashboard/Dashboard.java</url>
-          <line>384</line>
+          <line>388</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>

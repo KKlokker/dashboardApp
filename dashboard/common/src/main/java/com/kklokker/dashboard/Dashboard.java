@@ -28,6 +28,10 @@ public class Dashboard extends Lifecycle {
     private static List<classModule> modules = new ArrayList<classModule>();
 
     @Override
+    /*
+    * Constructs the elements of the app
+    * Design is based on https://dribbble.com/shots/17279399-Mobile-design-Education-dashboard
+     */
     public void runApp() {
         dashboard = new Form("Dashboard", new LayeredLayout());
         dashboard.setUIID("dashboard");
