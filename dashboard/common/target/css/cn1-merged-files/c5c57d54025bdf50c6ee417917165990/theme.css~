@@ -1,0 +1,55 @@
+/** Define Theme Constants here */
+#Constants {
+    includeNativeBool: true;
+    defaultSourceDPIInt: "0";
+}
+
+timeTable {
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+timeEvent {
+}
+
+popUpForm {
+    background-color: red;
+    color: red;
+}
+
+timeField {
+    width: 2mm;
+}
+
+messages {
+    background-color: #BAE6F4;
+    border: 0px solid black;
+    border-radius: 2mm;
+    margin: 1mm;
+}
+
+prog {
+    background-color: #FDE1AD;
+    border: 0px solid black;
+    border-radius: 2mm;
+    margin: 1mm;
+}
+
+prog {
+    color: red;
+}
+
+cons {
+    background-color: #E2D3FD;
+    border: 0px solid black;
+    border-radius: 2mm;
+    margin: 1mm;
+}
+
+prof {
+    background-color: #FDADB2;
+    border: 0px solid black;
+    border-radius: 2mm;
+    margin: 1mm;
+}
+

@@ -1,0 +1,114 @@
+/** Define Theme Constants here */
+#Constants {
+    includeNativeBool: true;
+    defaultSourceDPIInt: "0";
+}
+
+classContainerTitle {
+    font-size: 4mm;
+}
+
+dashboard {
+    margin: 1mm;
+    background-color: white;
+}
+
+timeTable {
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+timeTitle {
+    font-size: 3mm;
+    margin: 0;
+    padding: 1mm 0 1mm 0;
+}
+
+timeTime {
+    font-size: 2mm;
+    margin: 0;
+    padding: 0;
+}
+
+timeAddress {
+    font-size: 2mm;
+    margin: 0;
+    padding: 0;
+    color: grey;
+}
+
+popUpForm {
+    background-color: white;
+    border-radius: 5mm;
+    border: 2px solid black;
+    margin: 2mm;
+}
+
+eventField {
+    border: 2px solid black;
+    border-radius: 1mm;
+    margin: 1.5mm;
+}
+
+messages {
+    background-color: #BAE6F4;
+    border-radius: 2mm;
+    margin: 1mm;
+}
+
+prog {
+    background-color: #FDE1AD;
+    border-radius: 2mm;
+    margin: 1mm;
+}
+
+cons {
+    background-color: #E2D3FD;
+    border-radius: 2mm;
+    margin: 1mm;
+}
+
+prof {
+    background-color: #FDADB2;
+    border-radius: 2mm;
+    margin: 1mm;
+}
+
+classes {
+    background-color: #E4E4E4;
+    border-radius: 2mm;
+    margin: 1mm;
+}
+
+classIcons {
+    background-color: #AF83FF;
+    border-radius: 2mm;
+    padding: 1mm;
+}
+
+classTitle {
+    color: black;
+
+}
+
+buttonSelected {
+    color: black;
+    border-bottom: 5px solid black;
+    text-align: center;
+}
+
+buttonUnselected {
+    color: grey;
+    text-align: center;
+}
+
+linkIcons {
+    background-color: white;
+    border-radius: 3mm;
+    margin: 1mm 0 0 0;
+}
+
+linkTitle {
+    color: black;
+    font-size: 4mm;
+}
