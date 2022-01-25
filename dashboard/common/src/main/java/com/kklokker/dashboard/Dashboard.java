@@ -395,7 +395,7 @@ public class Dashboard extends Lifecycle {
     }
 
     /*
-    * Makes an icon from the icon string found on https://fonts.google.com/icons?selected=Material+Icons where it has to start with "\u" + the icon code point
+    * Makes an icon from the icon string found on https://fonts.google.com/icons?selected=Material+Icons where it has to start with "\\u" + the icon code point
     * The width is used to the icon sized which is the screen-width divided by the width argument
     * The color argument is for the color of the icon given in hex
      */
